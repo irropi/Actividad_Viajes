@@ -1,0 +1,78 @@
+/* RESET */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+/* HEADER */
+
+header {
+    size: 100%;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    background-image: url("../images/nathan-anderson-316188-unsplash.jpg");
+    background-size: cover;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+#menu {
+    width: 100%;
+    justify-content: center;
+}
+
+
+#iconlogo {
+    width: 12%;
+
+}
+
+ul {
+    width: 33%;
+}
+
+#rrss {
+    width: 26%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.iconorrss {
+    width: 10%;
+}
+
+/* INDEX */
+#seccioninicio {
+    background-image: url("../images/nathan-anderson-316188-unsplash.jpg");
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+#divinicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+#buttondestinos {
+    background-color: yellow;
+    border: none;
+    color: darkblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+}
