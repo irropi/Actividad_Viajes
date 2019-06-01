@@ -1,19 +1,25 @@
 /* RESET */
+
 * {
-    margin:0;
-    padding: 0;
     box-sizing: border-box;
     z-index: 0;
+}
+
+body html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-decoration: none;
 }
 
 /* HEADER */
 
 header {
-    size: 100%;
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    width: 100vw;
-    z-index: 1;
+    z-index: 1; */
     background-image: url("../images/nathan-anderson-316188-unsplash.jpg");
     background-size: cover;
     font-style: italic;
@@ -31,10 +37,6 @@ header {
 
 }
 
-ul {
-    width: 33%;
-}
-
 #rrss {
     width: 26%;
     display: flex;
@@ -45,34 +47,202 @@ ul {
     width: 10%;
 }
 
-/* INDEX */
+/* CABECERA INDEX */
+
 #seccioninicio {
     background-image: url("../images/nathan-anderson-316188-unsplash.jpg");
     background-size: cover;
     width: auto;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: antiquewhite;
+    color: white;
+}
+
+#h1viaja {
+    font-size: 4em;
+}
+
+#pdescubre {
+    font-size: 2.5em;
 }
 
 #divinicio {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: flex-start;
 }
 
-
-
 #buttondestinos {
-    background-color: yellow;
+    background-color: #fef200;
     border: none;
-    color: darkblue;
-    padding: 15px 32px;
+    color: #141939;
+    padding: 0.2em 1em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 2em;
+    font-style: italic;
+    align-self: center;
+}
+
+/* DESTINOS INDEX */
+
+#secciondestinos {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 2.7em 8.6em 2.7em 8.6em;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#madrid {
+    background-image: url("../images/madrid.JPG");
+    background-size: cover;
+    position: relative;
+    height: 16.29em;
+    width: 19.44em;
+}
+
+#buenosaires {
+    background-image: url("../images/buenos_aires.JPG");
+    background-size: cover;
+    position: relative;
+    height: 16.29em;
+    width: 19.44em;
+}
+
+#tokyo {
+    background-image: url("../images/tokyo.JPG");
+    background-size: cover;
+    position: relative;
+    height: 16.29em;
+    width: 19.44em;
+}
+
+#beijing {
+    background-image: url("../images/beijing.JPG");
+    background-size: cover;
+    position: relative;
+    height: 16.29em;
+    width: 19.44em;
+}
+
+#mexico {
+    background-image: url("../images/ciudad_mexico.JPG");
+    background-size: cover;
+    position: relative;
+    height: 16.29em;
+    width: 19.44em;
+}
+
+#newyork {
+    background-image: url("../images/new_york.JPG");
+    background-size: cover;
+    position: relative;
+    height: 16.29em;
+    width: 19.44em;
+}
+
+.savings {
+    position: absolute;
+    z-index: 1;
+    height: 3.15em;
+    width: 100%;
+    background: #141939;
+    color: white;
+    align-items: center;
+    display: flex;
+    padding-left: 15%;
+}
+
+.price {
+    background: #fef200;
+    color: #141939;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    /* height: 5.22em; 
+    width: 6.93em; */
+    height: 35%;
+    width: 35.5%;
+    z-index: 2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.destino {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    color: #141939;
+    padding-left: 40%;
+}
+
+/* QUIENES SOMOS INDEX */
+
+#seccionquienessomos {
+    box-sizing: border-box;
+    background-image: url("../images/sectionquiensomostio2.jpeg");
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+
+#quienessomos {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    background-color: white;
+    margin-top: 3.908em;
+    margin-right: 41.348em;
+    margin-bottom: 3.15em;
+    margin-left: 9.848em;
+    padding-top: 2.12em;
+    padding-right: 3em;
+    padding-bottom: 2.12em;
+    padding-left: 2.685em;
+}
+
+#textoquienessomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h2quienessomos, svg {
+    align-self: flex-start;
+}
+
+#pquienesomos {
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#buttondescubrir {
+    background-color: #141939;
+    border: none;
+    color: #fef200;
+    font-weight: 600;
+    padding: 0.2em 1em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8em;
+}
+
+/* MAPA INDEX */
+
+#seccionmapa {
+    box-sizing: border-box;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
 }

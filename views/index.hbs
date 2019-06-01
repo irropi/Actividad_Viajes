@@ -1,34 +1,83 @@
+{{!-- *** Isla --}}
 <section id="seccioninicio">
     <div id="divinicio">
-    <h1 style="font-size: 4em">¡Viaja!</h1>
-    <p style="font-size: 2em">¡Descubre sitios maravillosos!</p>
-    <button id="buttondestinos" href=".destinos">Ver destinos</button>
+        <h1 id="h1viaja">¡Viaja!</h1>
+        <p id="pdescubre">¡Descubre sitios maravillosos!</p>
+        <a id="buttondestinos" href="#secciondestinos">Ver destinos</a>
     </div>
 </section>
+
+{{!-- *** Destinos --}}
 <section id="secciondestinos">
-   
-    <div class="destinos" id="mykonos"></div>
-    <p class="savings">Save 90$ pay only</p>
-    <p class="price">359$</p>
 
-    <div class="destinos" id="london"></div>
-    <p class="savings">Save 75$ pay only</p>
-<p class="price">729$</p>
+    <div id="madrid">
+        <p class="savings">Save 90$, pay only</p>
+        <span class="price">359$</span>
+        <div class="destino">Madrid</div>
+    </div>
 
-    <div class="destinos" id="dublin"></div>
-    <p class="savings">Save 35$ pay only</p>
-    <p class="price">519$</p>
+    <div id="buenosaires">
+        <p class="savings">Save 75$, pay only</p>
+        <span class="price">729$</span>
+        <div class="destino">Buenos Aires</div>
+    </div>
 
-    <div class="destinos" id="paris"></div>
-    <p class="savings">Save 65$ pay only</p>
-    <p class="price">329$</p>
+    <div id="tokyo">
+        <p class="savings">Save 35$, pay only</p>
+        <span class="price">519$</span>
+        <div class="destino">Tokyo</div>
+    </div>
 
-    <div class="destinos" id="amsterdam"></div>
-    <p class="savings">Save 95$ pay only</p>
-    <p class="price">199$</p>
+    <div id="beijing">
+        <p class="savings">Save 65$, pay only</p>
+        <span class="price">329$</span>
+        <div class="destino">Beijing</div>
+    </div>
 
-    <div class="destinos" id="rome"></div>
-    <p class="savings">Save 50$ pay only</p>
-    <p class="price">659$</p>
+    <div id="mexico">
+        <p class="savings">Save 95$, pay only</p>
+        <span class="price">199$</span>
+        <div class="destino">México</div>
+    </div>
 
+    <div id="newyork">
+        <p class="savings">Save 50$, pay only</p>
+        <span class="price">659$</span>
+        <div class="destino">New York</div>
+    </div>
+
+</section>
+
+{{!-- *** Quiénes somos? --}}
+<section id="seccionquienessomos">
+    <div id="quienessomos">
+        <div id="textoquienessomos">
+            <h2 id="h2quienessomos">¿QUIÉNES SOMOS?</h2>
+            <svg height="15" width="90">
+                <line x1="0" y1="0" x2="90" y2="0" style="stroke:#fef200;stroke-width:5"></line>
+            </svg>
+            <p id="pquienesomos">GeeksHubs Travels es una agencia de viajes online creada en 2009 por un equipo de
+                viajeros entusiastas que
+                deciden hacer de su pasión por conocer el mundo un modo de vida. Desde nuestros inicios hemos diseñado
+                más
+                de 500 viajes organizados a diferentes destinos de Europa, Norte América y Asia. Nuestro objetivo ahora
+                es
+                ir ampliando horizontes poco a poco.</p>
+            <a id="buttondescubrir" href="#">DESCUBRIR</a>
+        </div>
+    </div>
+
+</section>
+
+{{!-- *** Mapa --}}
+<section id="seccionmapa">
+    <div class="mapa">
+        <iframe width="90%" height="500px"
+            src="https://maps.google.com/maps?width=100%&height=600&hl=es&q=Moll%20de%20Ponent%20-%20Base%202%20(Edificio%20Innsomnia%2C%2046024%20Valencia+(GeeksHubs%20Travels)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
+                href="https://www.mapsdirections.info/calcular-ruta.html">mapas y direcciones</a></iframe>
+    </div>
+    <div class="formulario">
+
+    </div>
 </section>
