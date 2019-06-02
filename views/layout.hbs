@@ -3,10 +3,15 @@
 
 <head>
   <title>{{title}}</title>
+  {{!-- FONT AWESOME --}}
+  <script src="https://kit.fontawesome.com/8899f7ea13.js"></script>
+  {{!-- GOOGLE FONTS --}}
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  {{!-- BIBLIOTECA BOOTSTRAP --}}
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
 <body>
@@ -54,8 +59,39 @@
   {{{body}}}
 
   <footer>
-
+    <div id="footergrid">
+      <div id="footerayuda">
+        <h5>¿NECESITAS AYUDA?</h5>
+        <ul id="footerayudalist">
+          <li><i class="fas fa-envelope-open-text"></i> : enquiry@geekshubstravels.com</li>
+          <li><i class="fas fa-phone"></i> : 0264 123 4567</li>
+        </ul>
+        <p>Lunes -Vienes: 8:30-19:00 Sabádos: 10:00-14:00</p>
+      </div>
+      <div id="footerinformacion">
+        <h5>INFORMACIÓN</h5>
+        <ul>
+          <li>¿Quiénes somos?</li>
+          <li>Preguntas frecuentes</li>
+          <li>Política de privacidad</li>
+          <li>Condiciones generales</li>
+          <li>Aviso legal</li>
+          <li>Contacto</li>
+          <li>Programa de puntos</li>
+        </ul>
+      </div>
+      <div id="footernewsletter">
+        <h5>SUSCRÍBETE A NUESTRA NEWSLETTER</h5>
+        <p>
+          <input placeholder="Correo electrónico" type="email" name="email" id="email" required>
+        </p>
+        <a id="buttonfooternewsletter" href="#">SUSCRÍBETE</a>
+      </div>
+    </div>
+    <div id="copyright">GeeksHubs Travels &copy; 2018 Todos los derechos reservados</div>
   </footer>
+
+  {{!-- BIBLIOTECA BOOTSTRAP --}}
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>

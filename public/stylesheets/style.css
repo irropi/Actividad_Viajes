@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    z-index: 0;
 }
 
 body html {
@@ -14,7 +13,7 @@ body {
     text-decoration: none;
 }
 
-/* HEADER */
+/* HEADER LAYOUT*/
 
 header {
     /* position: sticky;
@@ -45,6 +44,47 @@ header {
 
 .iconorrss {
     width: 10%;
+}
+
+/* FOOTER LAYOUT*/
+
+footer {
+    background-color: #141939;
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#footergrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+#copyright {
+    font-size: 0.8em;
+    text-align: center;
+    border-top: 0.1em solid black;
+    padding: 1%;
+}
+
+ul {
+    list-style: none;
+}
+
+#buttonfooternewsletter {
+    background-color: #fef200;
+    border: none;
+    color: #141939;
+    padding: 0.2em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4em;
+    align-self: center;
 }
 
 /* CABECERA INDEX */
@@ -92,97 +132,98 @@ header {
 #secciondestinos {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    box-sizing: border-box;
-    padding: 2.7em 8.6em 2.7em 8.6em;
-    height: 90vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 2.7em 8.6em 2.7em 8.6em;
 }
 
 #madrid {
-    background-image: url("../images/madrid.JPG");
+    background-image: url(../images/madrid.JPG);
     background-size: cover;
-    position: relative;
     height: 16.29em;
     width: 19.44em;
+    margin: 1em;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 #buenosaires {
     background-image: url("../images/buenos_aires.JPG");
     background-size: cover;
-    position: relative;
     height: 16.29em;
     width: 19.44em;
+    margin: 1em;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 #tokyo {
     background-image: url("../images/tokyo.JPG");
     background-size: cover;
-    position: relative;
     height: 16.29em;
     width: 19.44em;
+    margin: 1em;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 #beijing {
     background-image: url("../images/beijing.JPG");
     background-size: cover;
-    position: relative;
     height: 16.29em;
     width: 19.44em;
+    margin: 1em;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 #mexico {
     background-image: url("../images/ciudad_mexico.JPG");
     background-size: cover;
-    position: relative;
     height: 16.29em;
     width: 19.44em;
+    margin: 1em;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 #newyork {
     background-image: url("../images/new_york.JPG");
     background-size: cover;
-    position: relative;
     height: 16.29em;
     width: 19.44em;
+    margin: 1em;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .savings {
-    position: absolute;
-    z-index: 1;
-    height: 3.15em;
-    width: 100%;
     background: #141939;
     color: white;
-    align-items: center;
-    display: flex;
-    padding-left: 15%;
+    align-self: flex-start;
+    width: 64.5%;
+    height: 15%;
+    padding-top: 2.5%;
+    padding-left: 6%;
 }
 
 .price {
     background: #fef200;
     color: #141939;
-    position: absolute;
-    text-align: center;
-    right: 0;
-    /* height: 5.22em; 
-    width: 6.93em; */
-    height: 35%;
+    align-self: self-end;
     width: 35.5%;
-    z-index: 2;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    height: 35%;
+    text-align: center;
+    padding-top: 8%;
+    font-size: 1.6em;
 }
 
 .destino {
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     background: white;
     color: #141939;
+    align-self: flex-end;
+    width: 100%;
     padding-left: 40%;
 }
 
@@ -190,25 +231,22 @@ header {
 
 #seccionquienessomos {
     box-sizing: border-box;
-    background-image: url("../images/sectionquiensomostio2.jpeg");
+    background-image: url(../images/sectionquiensomostio2.jpeg);
     background-size: cover;
-    height: 90vh;
-    position: relative;
+    padding: 2%;
 }
 
 #quienessomos {
-    position: absolute;
-    z-index: 1;
     display: flex;
     background-color: white;
-    margin-top: 3.908em;
-    margin-right: 41.348em;
-    margin-bottom: 3.15em;
-    margin-left: 9.848em;
-    padding-top: 2.12em;
-    padding-right: 3em;
-    padding-bottom: 2.12em;
-    padding-left: 2.685em;
+    margin-top: 5%;
+    margin-right: 49.5%;
+    margin-bottom: 5%;
+    margin-left: 12.3%;
+    padding-top: 2.5%;
+    padding-right: 2.6%;
+    padding-bottom: 2.5%;
+    padding-left: 2.6%;
 }
 
 #textoquienessomos {
@@ -217,7 +255,8 @@ header {
     align-items: center;
 }
 
-#h2quienessomos, svg {
+#h2quienessomos,
+svg {
     align-self: flex-start;
 }
 
@@ -238,11 +277,47 @@ header {
     font-size: 1.8em;
 }
 
-/* MAPA INDEX */
+/* MAPA-CONTACTO INDEX */
 
-#seccionmapa {
+#seccionmapacontacto {
+    font-family: 'Lato', sans-serif;
+    color: #141939;
+    font-weight: 600;
     box-sizing: border-box;
-    height: 90vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+#contactformlist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#buttoncontacto {
+    background-color: #fef200;
+    border: none;
+    color: #141939;
+    padding: 0.2em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 400;
+    font-style: italic;
+    align-self: baseline;
+}
+
+#pdisclaimer {
+    font-size: 0.6em;
 }

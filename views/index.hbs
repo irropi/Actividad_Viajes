@@ -70,14 +70,51 @@
 </section>
 
 {{!-- *** Mapa --}}
-<section id="seccionmapa">
+<section id="seccionmapacontacto">
     <div class="mapa">
+        {{!-- <img src="../images/mapa1.jpg" alt="mapa"> --}}
         <iframe width="90%" height="500px"
             src="https://maps.google.com/maps?width=100%&height=600&hl=es&q=Moll%20de%20Ponent%20-%20Base%202%20(Edificio%20Innsomnia%2C%2046024%20Valencia+(GeeksHubs%20Travels)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
                 href="https://www.mapsdirections.info/calcular-ruta.html">mapas y direcciones</a></iframe>
     </div>
-    <div class="formulario">
 
+    <div id="contact-form">
+        <p> Llámanos o visitanos cuando quieras, nos esforzamos en responder todos los mensajes en 24 horas en días
+            laborables.</p>
+        <ul id="contactformlist">
+            <li><i class="fas fa-envelope-open-text"></i> : enquiry@geekshubstravels.com</li>
+            <li><i class="fas fa-phone"></i> : 0264 123 4567</li>
+        </ul>
+        <p> Nuestro horario de apertura es de 08:30 a 19:00 de lunes a viernes y los sábados de 10:00 a 14:00.</p>
+        <svg height="15" width="30">
+            <line x1="0" y1="0" x2="90" y2="0" style="stroke:#0052ff;stroke-width:5"></line>
+        </svg>
+        <form>
+            <p>
+                <label for="name"></label>
+                <input placeholder="Nombre*" type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label for="email"></label>
+                <input placeholder="Email*" type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="phone"></label>
+                <input placeholder="Teléfono*" type="tel" name="phone" id="phone" required>
+            </p>
+            <p>
+                <label for="country"></label>
+                <input placeholder="País" type="text" name="country" id="country">
+            </p>
+
+        </form>
+        <p id="mensajecontacto">
+            <label for="message"></label>
+            <textarea style="width: 80%" placeholder="Mensaje" name="message" id="message" cols="30"
+                rows="3"></textarea>
+        </p>
+        <p id="pdisclaimer">* POR FAVOR RELLENA TODOS LOS CAMPOS CORRECTAMENTE</p>
+        <a id="buttoncontacto" href="#">Enviar mensaje</a>
     </div>
 </section>
