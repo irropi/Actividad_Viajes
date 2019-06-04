@@ -13,13 +13,18 @@ body {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 /* HEADER LAYOUT*/
 
 header {
-    /* position: sticky;
+    position: sticky;
     top: 0;
-    z-index: 1; */
+    z-index: 1;
     background-image: url("../images/nathan-anderson-316188-unsplash.jpg");
+    background-color: #141939;
     background-size: cover;
     font-style: italic;
     font-size: 1.2em;
@@ -69,10 +74,6 @@ footer {
     text-align: center;
     border-top: 0.1em solid black;
     padding: 1%;
-}
-
-ul {
-    list-style: none;
 }
 
 #buttonfooternewsletter {
@@ -291,6 +292,10 @@ svg {
     padding: 5%;
 }
 
+#contact-form {
+    width: 40%;
+}
+
 #contactformlist {
     display: flex;
     flex-direction: column;
@@ -301,7 +306,7 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 #buttoncontacto {
@@ -320,4 +325,17 @@ form {
 
 #pdisclaimer {
     font-size: 0.6em;
+}
+
+/* REGISTER */
+#seccionregistro {
+    background-image: url("../images/pasaje.jpg");
+    background-size: cover;
+    }
+
+#formregistro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
