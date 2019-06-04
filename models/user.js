@@ -8,13 +8,11 @@ const userSchema = new mongoose.Schema({
     name: {
         type: String,
         maxlength: 40,
-        required: true,
     },
     lastname: String,
     email: {
         type: String,
         unique: true,
-        required: true,
         validate: function (email) {
             return new Promise(function (resolve) {
                 setTimeout(function () {
@@ -27,13 +25,12 @@ const userSchema = new mongoose.Schema({
     username: {
         type: String,
         unique: true,
-        required: true,
     },
     password: {
         type: String,
         minlength: 8,
-        required: true,
-    }
+    },
+    confirmedEmail:Boolean,
 });
 
 // userSchema.pre('save', function (next) {
@@ -48,3 +45,6 @@ const userSchema = new mongoose.Schema({
 
 const userModel = mongoose.model('User', userSchema);
 module.exports = userModel;
+
+
+
