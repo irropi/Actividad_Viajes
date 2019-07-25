@@ -1,9 +1,5 @@
-const atlasURL = `mongodb+srv://ItsMeMario: esnWzXrEpcqIUDrz @myclusterhasaname-ltkty.mongodb.net/test?retryWrites=true&w=majority`;
-const devURL = `mongodb://localhost:27017/ProyectoAgenciaViajes_dev`; 
-const url = process.env.NODE_ENV === "production" ? atlasURL :devURL;
-
 const mongoose = require('mongoose');
-mongoose.connect( url , {
+mongoose.connect(`mongodb://localhost:27017/ProyectoAgenciaViajes_dev`, {
         useCreateIndex: true,
         useNewUrlParser: true
     })
