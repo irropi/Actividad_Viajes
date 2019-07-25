@@ -1,24 +1,16 @@
 <section id="seccionregistro">
-    <form id="formregistro" action="" method="post">
+    <div id="registro">
         <h1>REGISTRO</h1>
-        <a>¿Ya estás registrado?<a>
-
-                <p>
-                    <input placeholder="Usuario" type="text" name="name" required>
-                </p>
-                <p>
-                    <input placeholder="Email" type="email" name="email" required>
-                </p>
-                <p>
-                    <input placeholder="Contraseña" type="password" name="contraseña" required>
-                </p>
-                <p>
-                    <input placeholder="Repetir constraseña" type="password" name="contraseña" required>
-                </p>
-                <p> <input type="checkbox" value="second_checkbox"> <label for="cbox2">Acepto los términos y
-                        condiciones, así como la política de privacidad.</label>
-                </p>
-
-                <a id="buttonregister" href="#">Enviar</a>
-    </form>
+        <a>¿Ya estás registrado?</a>
+         <form id="formregistro" action="users/signup" method="post">
+                    <input placeholder="Usuario" type="text" name="name" required="true">
+                    <input placeholder="Email" type="email" name="email" required="true">
+                    <input placeholder="Contraseña" type="password" name="password" required="true">
+                    <input placeholder="Repetir constraseña" type="password" name="confirmedpassword" required="true">
+                    <input type="checkbox" name="checkboxregistro" id="checkboxregistro">
+                    <label for="checkboxregistro">Acepto los términos y condiciones, así como la política de privacidad.</label>
+                    <a href="#"><button id="buttonregister" type="submit">Enviar</button></a>
+                </form>
+               
+    </div>
 </section>

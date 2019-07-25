@@ -10,6 +10,10 @@ router.get("/register", function(req, res, next) {
   res.render("register", { title: "Register" });
 });
 
+router.get("/sucess", function(req, res, next) {
+  res.render("sucess", {title: "Sucessfully registered"});
+}); 
+
 router.get("/login", function(req, res, next) {
 res.render("login", {title: "Login"});
 });

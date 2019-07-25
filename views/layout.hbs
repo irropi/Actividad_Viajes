@@ -11,16 +11,18 @@
   {{!-- BIBLIOTECA BOOTSTRAP --}}
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" href="images/favicon.png">
   {{!-- CSS PROPIO --}}
   <link rel='stylesheet' href="/stylesheets/style.css" />
   {{!-- JAVASCRIPT PROPIO --}}
-  <script async defer src="/javascripts/main.js"></script>
+  <script src="/javascripts/main.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <img id="iconlogo" src="images/iconoweb1.png" alt="logo">
+      <a href="./">
+        <img src="images/iconoweb1.png" id="iconlogo" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,14 +50,12 @@
         </ul>
 
       </div>
-      <form id="rrss" class="form-inline my-2 my-lg-0">
-        <img class="iconorrss" src="images/tt.png" alt="twitter logo">
-        <img class="iconorrss" src="images/ws.png" alt="whatsapp logo">
-        <img class="iconorrss" src="images/fb.png" alt="facebook logo">
-        <img class="iconorrss" src="images/insta.png" alt="instagram logo">
-        <img class="iconorrss" src="images/in.png" alt="linkedin logo">
-        <img class="iconorrss" src="images/yt.png" alt="youtube logo">
-      </form>
+      <div id="usuarios">
+        <a href="./login">
+          <button id="loginbutton">Login</button> </a>
+        <a href="./register">
+          <button id="registerbutton">Regístrate</button></a>
+      </div>
     </nav>
   </header>
 
@@ -73,22 +73,28 @@
       </div>
       <div id="footerinformacion">
         <h5>INFORMACIÓN</h5>
-        <ul>
-          <li>¿Quiénes somos?</li>
-          <li>Preguntas frecuentes</li>
-          <li>Política de privacidad</li>
-          <li>Condiciones generales</li>
-          <li>Aviso legal</li>
-          <li>Contacto</li>
-          <li>Programa de puntos</li>
-        </ul>
+        <p>¿Quiénes somos?</p>
+        <p>Preguntas frecuentes</p>
+        <p>Política de privacidad</p>
+        <p>Condiciones generales</p>
+        <p>Aviso legal</p>
+        <p>Contacto</p>
+        <p>Programa de puntos</p>
       </div>
       <div id="footernewsletter">
         <h5>SUSCRÍBETE A NUESTRA NEWSLETTER</h5>
         <p>
           <input placeholder="Correo electrónico" type="email" name="email" id="email" required>
         </p>
-        <a id="buttonfooternewsletter" href="#">SUSCRÍBETE</a>
+        <a href="#"><button id="buttonfooternewsletter">SUSCRÍBETE</button></a>
+        <div id="rrss">
+          <img class="iconorrss" src="images/tt.png" alt="twitter logo">
+          <img class="iconorrss" src="images/ws.png" alt="whatsapp logo">
+          <img class="iconorrss" src="images/fb.png" alt="facebook logo">
+          <img class="iconorrss" src="images/insta.png" alt="instagram logo">
+          <img class="iconorrss" src="images/in.png" alt="linkedin logo">
+          <img class="iconorrss" src="images/yt.png" alt="youtube logo">
+        </div>
       </div>
     </div>
     <div id="copyright">GeeksHubs Travels &copy; 2018 Todos los derechos reservados</div>

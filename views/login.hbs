@@ -1,15 +1,13 @@
 <section id="seccionlogin">
-    <h1>LOGIN</h1>
-    
-    <form>
-        <p>
-            <input placeholder="Usuario o email" type="string" name="email" required>
-        </p>
-        <p>
-            <input placeholder="Contraseña" type="password" name="contraseña" required>
-        </p>
-    </form>
-    <a id="buttonlogin" href="#">Enviar</a>
-    <a>¿No recuerdas tu contraseña?<a>
-
+    <div id="login">
+        <h1>LOGIN</h1>
+        <form class="login" id="formlogin" action="users/login" method="post">
+            <input placeholder="Usuario o email*" type="string" name="usernameEmail" required="true">
+            <input placeholder="Contraseña*" type="password" name="contraseña" required="true">
+            <input type="checkbox" name="checkboxlogin" id="checkboxlogin">
+            <label for="checkboxlogin">Acepto los términos y condiciones, así como la política de privacidad.</label>
+            <a href="#"><button id="buttonlogin" type="submit">Enviar</button></a>
+            <a>¿No recuerdas tu contraseña?</a>
+        </form>
+    </div>
 </section>
