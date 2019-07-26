@@ -10,6 +10,7 @@ var logger = require('morgan');
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users"); // importamos el router en la aplicación principal
 var destinationsRouter = require("./routes/destinations")
+var port = process.env.PORT || 3000; //TODO
 
 var app = express();
 
@@ -42,6 +43,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.listen( port, () => console.log( `servidor levantado en ${port}` ) ) //TODO
 
 module.exports = app;
 
